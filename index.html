@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS61C Exam Archive</title>
+    <meta name="description" content="A comprehensive, beautifully organized archive of past exams for CS61C.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CS61C Exam Archive</h1>
+        <p>A complete collection of past exams, solutions, and rewritten solutions to help you ace CS61C.</p>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search exams (e.g., Fall 2024, MT1)...">
+        <select id="semesterFilter" class="filter-select">
+            <option value="all">All Semesters</option>
+            <option value="Fa">Fall</option>
+            <option value="Sp">Spring</option>
+            <option value="Su">Summer</option>
+        </select>
+    </div>
+
+    <main>
+        <div id="examGrid" class="exam-grid">
+            <!-- Exam cards will be dynamically injected here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Created for the CS61C community. <a href="https://github.com/qilsklo/cs61c-exams" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
